@@ -1,0 +1,18 @@
+<%-include('header');%>
+<!-- <div class="main-div">
+    <div class="box1" >
+       <h1 class="box-h1">Compose here</h1>
+       
+    </div> -->
+    <div class="main-div">
+<div class="compose">
+<form action="/compose" method="post">
+    <h4>Title</h4>
+<input  name="posttitle" class="input" type="text">
+<h4>Compose</h4>
+<textarea class="textarea" name="postbody" id="textarea" cols="30" rows="10"></textarea>
+<button class="button" type="submit">Publish</button>
+</form>
+</div>
+</div>
+<%-include('footer');-%>

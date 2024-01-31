@@ -1,0 +1,211 @@
+*{
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+.nav{
+   height: 100px;
+   background-color: bisque;
+}
+ label.logo{
+    text-transform: capitalize;
+    line-height: 100px;
+    font-size: 30px;
+    color: black;
+    font-weight: 700;
+    margin-left: 40px;
+ }
+nav ul {
+  
+    float: right;
+}
+nav ul li{
+    height: 100px;
+    display: inline-block;
+    line-height: 100px;
+   
+}
+nav ul li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    font-size:20px ;
+     margin-right:30px ;
+}
+nav ul li a:hover{
+   color: rgb(145, 232, 14);
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    float: right;
+    line-height: 100px;
+    font-size: 40px;
+    display: none;
+    margin-right: 30px;
+}
+#check:checked~ul{
+    
+        display: block;
+    }
+@media(max-width: 850px){
+.nav{
+    display: flex;
+    flex-direction: column;
+
+}
+
+    label.checkbtn{
+        position: absolute;
+        right: 10px;
+
+        display: block;
+        width: 40px;
+
+
+        
+    }
+    nav ul li:hover{
+        background-color: burlywood;
+    }
+    nav ul li {
+        display: block;
+        line-height: 50px;
+      
+        
+    }
+    nav ul li a{
+        margin-left: 30px;
+    }  
+    ul{
+        background-color:  bisque;
+        display: none;
+        margin-top: 0px;
+     
+        float: left;
+    }
+    
+    }
+
+  /* listkliye */
+/*###3main div####*/
+.main-div{
+    padding: 20px 150px;
+    min-height: 74vh;
+    
+}
+
+.box-h1{
+padding: 20px 0;
+}
+.box{
+    padding: 20px;
+}
+#read{
+    display: none;
+}
+.less{
+    display: none;
+  
+   
+}
+.more{
+    font-size: 20px;
+    color: blue;
+   
+   
+}
+
+.para{
+    justify-content: center;
+    width: 90vw;
+    height: 50px;
+   overflow-y: hidden;
+}
+#read:checked~.more{
+    display:none;
+    font-size: 25px;
+    color: blue;
+    font-style: italic;
+   
+}
+#read:checked~.less{
+    display:block;
+    font-size: 20px;
+    color: blue;
+ 
+}
+
+#read:checked~.para{
+height: fit-content;
+
+    
+}
+
+/* forabout us page */
+footer{
+
+    display: flex;
+    height: 53px ;
+    background-color: #CE5A67;
+    line-height: 50px;
+    
+    justify-content: center;
+}
+.contact-icon{
+
+    padding: 0 10px;
+   font-size: 30px;
+}     
+/* compose files ffsafsafs */
+.compose{
+    /* height: 500px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+ 
+  
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    /* justify-content: center; */
+  
+} 
+ .input{
+    margin: 10px 0;
+  height: 50px;
+  padding: 5px;
+  
+ 
+ }
+ .textarea{
+    margin: 10px 0;
+    padding:5px ;
+  
+ }
+ .button{
+    
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 100px;
+    height: 40px;
+    background-color:rgb(18, 127, 204);
+  }
+  #fixed{
+    position: fixed;
+    top: 100px;
+    right: 1em;
+}
+
+ 
+
+
+
